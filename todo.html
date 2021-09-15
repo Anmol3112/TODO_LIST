@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO_LIST</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        li{
+            display:list-item;
+        }
+    </style>
+</head>
+<body> 
+    
+    <div id="container">
+    <h1>TODO_LIST</h1>
+    <input id="input" placeholder="Enter your work">
+    <button class="btn">Save</button>
+    <ul id="list">
+
+    </ul>
+</div>
+
+    <script>
+      var x=0;
+var i=document.getElementById("input");
+var btn=document.getElementsByClassName("btn");
+function display(){
+  var element=document.createElement("li");
+  element.innerText=i.value;  //
+  list.append(element);
+
+}
+btn[0].addEventListener('click',display);
+
+
+    </script>
+   </body>
+</html>
